@@ -9,21 +9,75 @@
 /* Begin PBXBuildFile section */
 		669FBBED2A7CAE7D002FE428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBBEC2A7CAE7D002FE428 /* AppDelegate.swift */; };
 		669FBBEF2A7CAE7D002FE428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBBEE2A7CAE7D002FE428 /* SceneDelegate.swift */; };
-		669FBBF12A7CAE7D002FE428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBBF02A7CAE7D002FE428 /* ViewController.swift */; };
-		669FBBF42A7CAE7D002FE428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669FBBF22A7CAE7D002FE428 /* Main.storyboard */; };
 		669FBBF62A7CAE7D002FE428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669FBBF52A7CAE7D002FE428 /* Assets.xcassets */; };
 		669FBBF92A7CAE7D002FE428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669FBBF72A7CAE7D002FE428 /* LaunchScreen.storyboard */; };
+		669FBC0B2A7CB65F002FE428 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 669FBC0A2A7CB65F002FE428 /* Alamofire */; };
+		669FBC132A7CB977002FE428 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC122A7CB977002FE428 /* BoardViewController.swift */; };
+		669FBC162A7CBA23002FE428 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC152A7CBA23002FE428 /* UIView+.swift */; };
+		669FBC1C2A7CBBB8002FE428 /* .swiftLint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 669FBC1B2A7CBBB8002FE428 /* .swiftLint.yml */; };
+		669FBC1F2A7CBF57002FE428 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC1E2A7CBF57002FE428 /* BoardViewModel.swift */; };
+		669FBC212A7CC00B002FE428 /* BoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC202A7CC00B002FE428 /* BoardTableViewCell.swift */; };
+		669FBC2A2A7CC5E0002FE428 /* Boards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC292A7CC5E0002FE428 /* Boards.swift */; };
+		669FBC2C2A7CC637002FE428 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC2B2A7CC637002FE428 /* Posts.swift */; };
+		669FBC2E2A7CC6E2002FE428 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC2D2A7CC6E2002FE428 /* SearchResults.swift */; };
+		669FBC322A7CC81A002FE428 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC312A7CC81A002FE428 /* NetworkService.swift */; };
+		669FBC342A7CC8D1002FE428 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC332A7CC8D1002FE428 /* Constants.swift */; };
+		669FBC362A7CF69B002FE428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669FBC352A7CF69B002FE428 /* Main.storyboard */; };
+		669FBC382A7CFDE4002FE428 /* ModalBoardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC372A7CFDE4002FE428 /* ModalBoardsViewController.swift */; };
+		669FBC3A2A7D03A4002FE428 /* ModalBoardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC392A7D03A4002FE428 /* ModalBoardsTableViewCell.swift */; };
+		669FBC3C2A7D0983002FE428 /* ModalBoardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC3B2A7D0983002FE428 /* ModalBoardsViewModel.swift */; };
+		669FBC3E2A7D7689002FE428 /* ModalBoardsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC3D2A7D7689002FE428 /* ModalBoardsDelegate.swift */; };
+		669FBC402A7D87D2002FE428 /* BoardTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC3F2A7D87D2002FE428 /* BoardTableCellViewModel.swift */; };
+		669FBC422A7E10A2002FE428 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC412A7E10A2002FE428 /* Date+.swift */; };
+		669FBC482A7E9FC3002FE428 /* PostSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC472A7E9FC3002FE428 /* PostSearchController.swift */; };
+		669FBC4B2A7EAD88002FE428 /* PostSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC4A2A7EAD88002FE428 /* PostSearchTableViewCell.swift */; };
+		669FBC4E2A7EB5D9002FE428 /* SearchPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC4D2A7EB5D9002FE428 /* SearchPostViewModel.swift */; };
+		669FBC502A7EC4A1002FE428 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC4F2A7EC4A1002FE428 /* SearchResultTableViewCell.swift */; };
+		669FBC522A7ED490002FE428 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC512A7ED490002FE428 /* UILabel+.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		669FBC182A7CBACD002FE428 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		669FBBE92A7CAE7D002FE428 /* MailPlug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailPlug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		669FBBEC2A7CAE7D002FE428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		669FBBEE2A7CAE7D002FE428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		669FBBF02A7CAE7D002FE428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		669FBBF32A7CAE7D002FE428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		669FBBF52A7CAE7D002FE428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669FBBF82A7CAE7D002FE428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		669FBBFA2A7CAE7D002FE428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		669FBC122A7CB977002FE428 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		669FBC152A7CBA23002FE428 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		669FBC1B2A7CBBB8002FE428 /* .swiftLint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftLint.yml; sourceTree = "<group>"; };
+		669FBC1E2A7CBF57002FE428 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		669FBC202A7CC00B002FE428 /* BoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
+		669FBC292A7CC5E0002FE428 /* Boards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boards.swift; sourceTree = "<group>"; };
+		669FBC2B2A7CC637002FE428 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		669FBC2D2A7CC6E2002FE428 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		669FBC312A7CC81A002FE428 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		669FBC332A7CC8D1002FE428 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		669FBC352A7CF69B002FE428 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		669FBC372A7CFDE4002FE428 /* ModalBoardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBoardsViewController.swift; sourceTree = "<group>"; };
+		669FBC392A7D03A4002FE428 /* ModalBoardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBoardsTableViewCell.swift; sourceTree = "<group>"; };
+		669FBC3B2A7D0983002FE428 /* ModalBoardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBoardsViewModel.swift; sourceTree = "<group>"; };
+		669FBC3D2A7D7689002FE428 /* ModalBoardsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBoardsDelegate.swift; sourceTree = "<group>"; };
+		669FBC3F2A7D87D2002FE428 /* BoardTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableCellViewModel.swift; sourceTree = "<group>"; };
+		669FBC412A7E10A2002FE428 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		669FBC472A7E9FC3002FE428 /* PostSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSearchController.swift; sourceTree = "<group>"; };
+		669FBC4A2A7EAD88002FE428 /* PostSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSearchTableViewCell.swift; sourceTree = "<group>"; };
+		669FBC4D2A7EB5D9002FE428 /* SearchPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostViewModel.swift; sourceTree = "<group>"; };
+		669FBC4F2A7EC4A1002FE428 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		669FBC512A7ED490002FE428 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669FBC0B2A7CB65F002FE428 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +95,7 @@
 		669FBBE02A7CAE7D002FE428 = {
 			isa = PBXGroup;
 			children = (
+				669FBC1B2A7CBBB8002FE428 /* .swiftLint.yml */,
 				669FBBEB2A7CAE7D002FE428 /* MailPlug */,
 				669FBBEA2A7CAE7D002FE428 /* Products */,
 			);
@@ -56,15 +112,146 @@
 		669FBBEB2A7CAE7D002FE428 /* MailPlug */ = {
 			isa = PBXGroup;
 			children = (
-				669FBBEC2A7CAE7D002FE428 /* AppDelegate.swift */,
-				669FBBEE2A7CAE7D002FE428 /* SceneDelegate.swift */,
-				669FBBF02A7CAE7D002FE428 /* ViewController.swift */,
-				669FBBF22A7CAE7D002FE428 /* Main.storyboard */,
+				669FBC282A7CC5D8002FE428 /* Model */,
+				669FBC232A7CC1F4002FE428 /* Protocol */,
+				669FBC222A7CC1EF002FE428 /* Extension */,
+				669FBC1D2A7CBC37002FE428 /* AppFiles */,
+				669FBC142A7CBA06002FE428 /* Utils */,
+				669FBC112A7CB93C002FE428 /* API */,
+				669FBC102A7CB935002FE428 /* ViewModel */,
+				669FBC0F2A7CB932002FE428 /* View */,
 				669FBBF52A7CAE7D002FE428 /* Assets.xcassets */,
-				669FBBF72A7CAE7D002FE428 /* LaunchScreen.storyboard */,
 				669FBBFA2A7CAE7D002FE428 /* Info.plist */,
 			);
 			path = MailPlug;
+			sourceTree = "<group>";
+		};
+		669FBC0F2A7CB932002FE428 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC492A7EAD68002FE428 /* PostSearchView */,
+				669FBC442A7E960A002FE428 /* BoardView */,
+				669FBC432A7E95FC002FE428 /* ModalBoardsView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		669FBC102A7CB935002FE428 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC4C2A7EB5CA002FE428 /* SearchPostViewModel */,
+				669FBC462A7E961E002FE428 /* ModalboardsViewModel */,
+				669FBC452A7E9616002FE428 /* BoardViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		669FBC112A7CB93C002FE428 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC312A7CC81A002FE428 /* NetworkService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		669FBC142A7CBA06002FE428 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC152A7CBA23002FE428 /* UIView+.swift */,
+				669FBC332A7CC8D1002FE428 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		669FBC1D2A7CBC37002FE428 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				669FBBEC2A7CAE7D002FE428 /* AppDelegate.swift */,
+				669FBBEE2A7CAE7D002FE428 /* SceneDelegate.swift */,
+				669FBBF72A7CAE7D002FE428 /* LaunchScreen.storyboard */,
+				669FBC352A7CF69B002FE428 /* Main.storyboard */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		669FBC222A7CC1EF002FE428 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC412A7E10A2002FE428 /* Date+.swift */,
+				669FBC512A7ED490002FE428 /* UILabel+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		669FBC232A7CC1F4002FE428 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC3D2A7D7689002FE428 /* ModalBoardsDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		669FBC282A7CC5D8002FE428 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC292A7CC5E0002FE428 /* Boards.swift */,
+				669FBC2B2A7CC637002FE428 /* Posts.swift */,
+				669FBC2D2A7CC6E2002FE428 /* SearchResults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		669FBC432A7E95FC002FE428 /* ModalBoardsView */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC372A7CFDE4002FE428 /* ModalBoardsViewController.swift */,
+				669FBC392A7D03A4002FE428 /* ModalBoardsTableViewCell.swift */,
+			);
+			path = ModalBoardsView;
+			sourceTree = "<group>";
+		};
+		669FBC442A7E960A002FE428 /* BoardView */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC122A7CB977002FE428 /* BoardViewController.swift */,
+				669FBC202A7CC00B002FE428 /* BoardTableViewCell.swift */,
+			);
+			path = BoardView;
+			sourceTree = "<group>";
+		};
+		669FBC452A7E9616002FE428 /* BoardViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC1E2A7CBF57002FE428 /* BoardViewModel.swift */,
+				669FBC3F2A7D87D2002FE428 /* BoardTableCellViewModel.swift */,
+			);
+			path = BoardViewModel;
+			sourceTree = "<group>";
+		};
+		669FBC462A7E961E002FE428 /* ModalboardsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC3B2A7D0983002FE428 /* ModalBoardsViewModel.swift */,
+			);
+			path = ModalboardsViewModel;
+			sourceTree = "<group>";
+		};
+		669FBC492A7EAD68002FE428 /* PostSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC472A7E9FC3002FE428 /* PostSearchController.swift */,
+				669FBC4A2A7EAD88002FE428 /* PostSearchTableViewCell.swift */,
+				669FBC4F2A7EC4A1002FE428 /* SearchResultTableViewCell.swift */,
+			);
+			path = PostSearchView;
+			sourceTree = "<group>";
+		};
+		669FBC4C2A7EB5CA002FE428 /* SearchPostViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				669FBC4D2A7EB5D9002FE428 /* SearchPostViewModel.swift */,
+			);
+			path = SearchPostViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +264,17 @@
 				669FBBE52A7CAE7D002FE428 /* Sources */,
 				669FBBE62A7CAE7D002FE428 /* Frameworks */,
 				669FBBE72A7CAE7D002FE428 /* Resources */,
+				669FBC182A7CBACD002FE428 /* Embed Frameworks */,
+				669FBC1A2A7CBB73002FE428 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MailPlug;
+			packageProductDependencies = (
+				669FBC0A2A7CB65F002FE428 /* Alamofire */,
+			);
 			productName = MailPlug;
 			productReference = 669FBBE92A7CAE7D002FE428 /* MailPlug.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +303,9 @@
 				Base,
 			);
 			mainGroup = 669FBBE02A7CAE7D002FE428;
+			packageReferences = (
+				669FBC092A7CB65F002FE428 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 669FBBEA2A7CAE7D002FE428 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,36 +320,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669FBC1C2A7CBBB8002FE428 /* .swiftLint.yml in Resources */,
 				669FBBF92A7CAE7D002FE428 /* LaunchScreen.storyboard in Resources */,
 				669FBBF62A7CAE7D002FE428 /* Assets.xcassets in Resources */,
-				669FBBF42A7CAE7D002FE428 /* Main.storyboard in Resources */,
+				669FBC362A7CF69B002FE428 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		669FBC1A2A7CBB73002FE428 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		669FBBE52A7CAE7D002FE428 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				669FBBF12A7CAE7D002FE428 /* ViewController.swift in Sources */,
+				669FBC2E2A7CC6E2002FE428 /* SearchResults.swift in Sources */,
+				669FBC382A7CFDE4002FE428 /* ModalBoardsViewController.swift in Sources */,
 				669FBBED2A7CAE7D002FE428 /* AppDelegate.swift in Sources */,
+				669FBC482A7E9FC3002FE428 /* PostSearchController.swift in Sources */,
 				669FBBEF2A7CAE7D002FE428 /* SceneDelegate.swift in Sources */,
+				669FBC4B2A7EAD88002FE428 /* PostSearchTableViewCell.swift in Sources */,
+				669FBC3A2A7D03A4002FE428 /* ModalBoardsTableViewCell.swift in Sources */,
+				669FBC132A7CB977002FE428 /* BoardViewController.swift in Sources */,
+				669FBC522A7ED490002FE428 /* UILabel+.swift in Sources */,
+				669FBC162A7CBA23002FE428 /* UIView+.swift in Sources */,
+				669FBC212A7CC00B002FE428 /* BoardTableViewCell.swift in Sources */,
+				669FBC2A2A7CC5E0002FE428 /* Boards.swift in Sources */,
+				669FBC1F2A7CBF57002FE428 /* BoardViewModel.swift in Sources */,
+				669FBC3E2A7D7689002FE428 /* ModalBoardsDelegate.swift in Sources */,
+				669FBC2C2A7CC637002FE428 /* Posts.swift in Sources */,
+				669FBC502A7EC4A1002FE428 /* SearchResultTableViewCell.swift in Sources */,
+				669FBC422A7E10A2002FE428 /* Date+.swift in Sources */,
+				669FBC3C2A7D0983002FE428 /* ModalBoardsViewModel.swift in Sources */,
+				669FBC4E2A7EB5D9002FE428 /* SearchPostViewModel.swift in Sources */,
+				669FBC402A7D87D2002FE428 /* BoardTableCellViewModel.swift in Sources */,
+				669FBC342A7CC8D1002FE428 /* Constants.swift in Sources */,
+				669FBC322A7CC81A002FE428 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		669FBBF22A7CAE7D002FE428 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				669FBBF32A7CAE7D002FE428 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		669FBBF72A7CAE7D002FE428 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		669FBC092A7CB65F002FE428 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		669FBC0A2A7CB65F002FE428 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 669FBC092A7CB65F002FE428 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 669FBBE12A7CAE7D002FE428 /* Project object */;
 }
