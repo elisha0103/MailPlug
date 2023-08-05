@@ -33,7 +33,6 @@
 		669FBC4B2A7EAD88002FE428 /* PostSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC4A2A7EAD88002FE428 /* PostSearchTableViewCell.swift */; };
 		669FBC4E2A7EB5D9002FE428 /* SearchPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC4D2A7EB5D9002FE428 /* SearchPostViewModel.swift */; };
 		669FBC502A7EC4A1002FE428 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC4F2A7EC4A1002FE428 /* SearchResultTableViewCell.swift */; };
-		669FBC522A7ED490002FE428 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FBC512A7ED490002FE428 /* UILabel+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,7 +76,6 @@
 		669FBC4A2A7EAD88002FE428 /* PostSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSearchTableViewCell.swift; sourceTree = "<group>"; };
 		669FBC4D2A7EB5D9002FE428 /* SearchPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostViewModel.swift; sourceTree = "<group>"; };
 		669FBC4F2A7EC4A1002FE428 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
-		669FBC512A7ED490002FE428 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				669FBC412A7E10A2002FE428 /* Date+.swift */,
-				669FBC512A7ED490002FE428 /* UILabel+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -363,7 +360,6 @@
 				669FBC4B2A7EAD88002FE428 /* PostSearchTableViewCell.swift in Sources */,
 				669FBC3A2A7D03A4002FE428 /* ModalBoardsTableViewCell.swift in Sources */,
 				669FBC132A7CB977002FE428 /* BoardViewController.swift in Sources */,
-				669FBC522A7ED490002FE428 /* UILabel+.swift in Sources */,
 				669FBC162A7CBA23002FE428 /* UIView+.swift in Sources */,
 				669FBC212A7CC00B002FE428 /* BoardTableViewCell.swift in Sources */,
 				669FBC2A2A7CC5E0002FE428 /* Boards.swift in Sources */,

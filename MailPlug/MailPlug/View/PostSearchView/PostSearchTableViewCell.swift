@@ -9,6 +9,7 @@ import UIKit
 
 class PostSearchTableViewCell: UITableViewCell {
     
+    // MARK: - Properties
     var category: SearchCategory? {
         didSet { configureUI() }
     }
@@ -27,6 +28,7 @@ class PostSearchTableViewCell: UITableViewCell {
         return label
     }()
 
+    // MARK: - Lifecycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         accessoryType = .disclosureIndicator
@@ -37,6 +39,7 @@ class PostSearchTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Helpers
     func configureUI() {
         guard let category = category else { return }
         categoryLabel.text = category.description

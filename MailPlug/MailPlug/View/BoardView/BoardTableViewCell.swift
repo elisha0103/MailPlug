@@ -10,6 +10,7 @@ import Combine
 
 class BoardTableViewCell: UITableViewCell {
     
+    // MARK: - Properties
     var viewModel: BoardTableCellViewModel? {
         didSet {
             bind()
@@ -81,6 +82,7 @@ class BoardTableViewCell: UITableViewCell {
         return label
     }()
     
+    // MARK: - Lifecycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -90,6 +92,7 @@ class BoardTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Helpers
     func bind() {
         guard let viewModel = viewModel else { return }
 

@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 class BoardTableCellViewModel {
+    
+    // MARK: - Properties
     @Published var post: Post
     var searchString: String?
     
@@ -61,7 +63,6 @@ class BoardTableCellViewModel {
             attrStr.addAttribute(.foregroundColor, value: UIColor.orange, range: range)
             
         }
-        print("DEBUG: viewModel attrstr: \(attrStr)")
         return attrStr
 
     }

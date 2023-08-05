@@ -9,6 +9,8 @@ import Foundation
 import Combine
 
 class SearchPostViewModel {
+    
+    // MARK: - Properties
     @Published var searchResults = SearchResults(searchResult: [], count: 0, offset: 0, limit: 0, total: 0)
     @Published var isEmptyData: Bool = false
     
@@ -17,16 +19,16 @@ class SearchPostViewModel {
     var searchCategory: SearchCategory?
     let board: Board
     
+    // MARK: - Lifecycle
     init(board: Board) {
         self.board = board
     }
     
+    // MARK: - API
     func fetchSearchResults(searchCategory: SearchCategory) {
         NetworkService.shared.fetchSearchResults(boardsId: board.boardID,
                                                  search: searchString,
                                                  searchTarget: searchCategory) { response in
-            print("DEBUG Posts URL: \(String(describing: response.response?.url))")
-            print("DEBUG Boards URLResponse State: \(String(describing: response.response?.statusCode))")
             response.result.publisher.replaceError(with: SearchResults(searchResult: [],
                                                                        count: 0, offset: 0, limit: 0, total: 0))
             .assign(to: \.searchResults, on: self)

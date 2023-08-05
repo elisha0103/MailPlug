@@ -65,8 +65,7 @@ class BoardViewController: UITableViewController {
     }
     
     // MARK: - Helpers
-    
-    func configureNavigationBar() {
+        func configureNavigationBar() {
         let menuImageView = UIImageView()
         menuImageView.image = UIImage(named: "hamburger menu")
         
@@ -116,7 +115,6 @@ class BoardViewController: UITableViewController {
         self.viewModel.$currentPosts
             .receive(on: DispatchQueue.main)
             .sink { [weak self] currentPosts in
-                print("DEBUG: RELOAD TABLEVIEW")
                 currentPosts.isEmpty ?
                 (self?.tableView.backgroundView?.isHidden = false) :
                 (self?.tableView.backgroundView?.isHidden = true)
@@ -135,7 +133,6 @@ class BoardViewController: UITableViewController {
         
         if contentOffsetY > (tableViewContentSize - tableView.bounds.size.height),
            viewModel.isPaginationFetching, contentOffsetY > 0 {
-            print("DEBUG: page plus")
             viewModel.isPaginationFetching = false
             viewModel.offset += 30
         }
@@ -163,7 +160,6 @@ extension BoardViewController: ModalBoardsDelegate {
     func didSelectedBoard(_ board: Board) {
         self.viewModel.selectedBoard = board
         self.viewModel.offset = 0
-        print("DEBUG: SELECTEDBOARD: \(self.viewModel.selectedBoard)")
     }
     
 }

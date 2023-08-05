@@ -9,6 +9,7 @@ import UIKit
 
 class ModalBoardsTableViewCell: UITableViewCell {
 
+    // MARK: - Properties
     var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "post"
@@ -16,6 +17,7 @@ class ModalBoardsTableViewCell: UITableViewCell {
         return label
     }()
     
+    // MARK: - Lifecycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         

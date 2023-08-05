@@ -10,6 +10,7 @@ import Combine
 
 class PostSearchController: UIViewController {
     
+    // MARK: - Properties
     let viewModel: SearchPostViewModel
     let postSearchTableViewCell: String = "postSearchTableViewCell"
     let searchResultTableViewCell: String = "searchResultTableViewCell"
@@ -156,8 +157,6 @@ class PostSearchController: UIViewController {
                                                             topAnchor: (self?.tableView)!.topAnchor, paddingTop: 200)
                     
                     self?.tableView.backgroundView?.isHidden = false
-                } else {
-//                    self?.tableView.backgroundView?.isHidden = true
                 }
             }
             .store(in: &cancelBag)
@@ -179,7 +178,6 @@ extension PostSearchController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if viewModel.searchResults.searchResult.isEmpty && searchString.isEmpty {
             return 0
-//            return searchString.isEmpty ? 0 : SearchCategory.allCases.count
         }
         if viewModel.isEmptyData && viewModel.searchResults.searchResult.isEmpty {
             return 0
@@ -187,7 +185,6 @@ extension PostSearchController: UITableViewDataSource {
         
         return viewModel.searchResults.searchResult.isEmpty ?
         SearchCategory.allCases.count : viewModel.searchResults.count
-//        return viewModel.searchResults.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

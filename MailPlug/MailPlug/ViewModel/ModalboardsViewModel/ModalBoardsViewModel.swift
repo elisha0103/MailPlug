@@ -8,8 +8,11 @@
 import UIKit
 
 class ModalBoardsViewModel {
+    
+    // MARK: - Properties
     @Published var boards: Boards
     
+    // MARK: - Lifecycle
     init(boards: Boards) {
         self.boards = boards
     }
