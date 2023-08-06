@@ -90,14 +90,6 @@ class BoardViewController: UITableViewController {
         self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
         self.navigationController?.navigationBar.tintColor = .black
 
-        viewModel.$selectedBoard
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] board in
-                self?.navigationItem.title = board.displayName
-                
-            }
-            .store(in: &cancelBag)
-        
     }
     
     func configureTableView() {
@@ -112,6 +104,14 @@ class BoardViewController: UITableViewController {
     }
     
     func bind() {
+        self.viewModel.$selectedBoard
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] board in
+                self?.navigationItem.title = board.displayName
+                
+            }
+            .store(in: &cancelBag)
+
         self.viewModel.$currentPosts
             .receive(on: DispatchQueue.main)
             .sink { [weak self] currentPosts in
@@ -156,10 +156,8 @@ extension BoardViewController {
 }
 
 extension BoardViewController: ModalBoardsDelegate {
-    
     func didSelectedBoard(_ board: Board) {
         self.viewModel.selectedBoard = board
         self.viewModel.offset = 0
     }
-    
 }

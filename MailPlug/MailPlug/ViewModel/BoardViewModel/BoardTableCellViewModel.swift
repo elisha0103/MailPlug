@@ -42,8 +42,20 @@ class BoardTableCellViewModel {
     }
     
     var titleAttributedString: NSAttributedString {
-        let attrStr = NSMutableAttributedString(string: post.title)
-        let entireLength = post.title.count
+        let attrStr = self.searchStringAttributedString(post.title)
+        
+        return attrStr
+    }
+    
+    var writerAttributedString: NSAttributedString {
+        let attrStr = self.searchStringAttributedString(post.writer.displayName)
+        
+        return attrStr
+    }
+    
+    func searchStringAttributedString(_ string: String) -> NSAttributedString {
+        let attrStr = NSMutableAttributedString(string: string)
+        let entireLength = string.count
         var range = NSRange(location: 0, length: entireLength)
         var rangeArr = [NSRange]()
         
@@ -54,7 +66,7 @@ class BoardTableCellViewModel {
 
             if range.location != NSNotFound {
                 range = NSRange(location: range.location + range.length,
-                                length: post.title.count - (range.location + range.length))
+                                length: string.count - (range.location + range.length))
                 
             }
             
@@ -66,4 +78,5 @@ class BoardTableCellViewModel {
         return attrStr
 
     }
+    
 }

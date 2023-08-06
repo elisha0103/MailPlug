@@ -104,7 +104,7 @@ class BoardTableViewCell: UITableViewCell {
                 if post.isAnonymous {
                     self?.writerLabel.text = "익명"
                 } else {
-                    self?.writerLabel.text = post.writer.displayName
+                    self?.writerLabel.attributedText = viewModel.writerAttributedString
                 }
                 self?.viewCountLabel.text = "\(post.viewCount)"
             }
@@ -131,13 +131,14 @@ class BoardTableViewCell: UITableViewCell {
         viewModel.isNewPost ? (newBadgeImageView.isHidden = false) : (newBadgeImageView.isHidden = true)
         viewModel.isIncludeAttachments ? (fileImageView.isHidden = false) : (fileImageView.isHidden = true)
         
-        titleLabel.attributedText = viewModel.titleAttributedString
+//        titleLabel.attributedText = viewModel.titleAttributedString
         firstLineStack.axis = .horizontal
         firstLineStack.spacing = 3
         firstLineStack.distribution = .fill
         firstLineStack.alignment = .center
         
         writerLabel.setContentHuggingPriority(.defaultLow, for: .horizontal)
+//        writerLabel.attributedText = viewModel.writerAttributedString
         let secondLineStack = UIStackView(arrangedSubviews: [writerLabel, dateLabel, eyeImage, viewCountLabel])
         
         secondLineStack.axis = .horizontal

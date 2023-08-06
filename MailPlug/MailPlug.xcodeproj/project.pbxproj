@@ -110,14 +110,14 @@
 		669FBBEB2A7CAE7D002FE428 /* MailPlug */ = {
 			isa = PBXGroup;
 			children = (
+				669FBC1D2A7CBC37002FE428 /* AppFiles */,
 				669FBC282A7CC5D8002FE428 /* Model */,
 				669FBC232A7CC1F4002FE428 /* Protocol */,
 				669FBC222A7CC1EF002FE428 /* Extension */,
-				669FBC1D2A7CBC37002FE428 /* AppFiles */,
+				669FBC0F2A7CB932002FE428 /* View */,
+				669FBC102A7CB935002FE428 /* ViewModel */,
 				669FBC142A7CBA06002FE428 /* Utils */,
 				669FBC112A7CB93C002FE428 /* API */,
-				669FBC102A7CB935002FE428 /* ViewModel */,
-				669FBC0F2A7CB932002FE428 /* View */,
 				669FBBF52A7CAE7D002FE428 /* Assets.xcassets */,
 				669FBBFA2A7CAE7D002FE428 /* Info.plist */,
 			);
@@ -127,9 +127,9 @@
 		669FBC0F2A7CB932002FE428 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				669FBC492A7EAD68002FE428 /* PostSearchView */,
 				669FBC442A7E960A002FE428 /* BoardView */,
 				669FBC432A7E95FC002FE428 /* ModalBoardsView */,
+				669FBC492A7EAD68002FE428 /* PostSearchView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,9 +137,9 @@
 		669FBC102A7CB935002FE428 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				669FBC4C2A7EB5CA002FE428 /* SearchPostViewModel */,
-				669FBC462A7E961E002FE428 /* ModalboardsViewModel */,
 				669FBC452A7E9616002FE428 /* BoardViewModel */,
+				669FBC462A7E961E002FE428 /* ModalboardsViewModel */,
+				669FBC4C2A7EB5CA002FE428 /* SearchPostViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

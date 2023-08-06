@@ -74,9 +74,8 @@ class PostSearchController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = .systemBackground
-        
+
         configureSearchController()
         configureTableView()
         bind()
@@ -88,6 +87,7 @@ class PostSearchController: UIViewController {
         let placeholder: String = "\(viewModel.board.displayName)에서 검색"
         
         searchController.searchBar.placeholder = placeholder
+        searchController.searchBar.searchTextField.autocapitalizationType = .none
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = true
         
@@ -209,7 +209,6 @@ extension PostSearchController: UITableViewDataSource {
 
         let post = viewModel.searchResults.searchResult[indexPath.row]
         cell.viewModel = BoardTableCellViewModel(post: post, searchString: searchString)
-        print("CELL RETURN")
         return cell
     }
     
